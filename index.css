@@ -116,10 +116,59 @@ body{
 }
 
 .main{
-  background: url(https://bibliaseensina.com.br/wp-content/uploads/2023/03/alguem-no-culto-de-maos-para-o-ar-ilustrando-se-devemos-adorar-jesus.jpg) no-repeat;
+  background: url(https://images.unsplash.com/photo-1561448817-f17eed390089?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80) no-repeat;
   background-size: cover;
     background-position: center;
   position: relative;
  top: 320px;
  height: 750px;
+}
+
+
+.containeversi {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  border: #CB0000 solid 3px;
+  height: 100%;
+}
+
+.itemum {
+  width: 100%;
+  border: rgb(43, 255, 0) solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.itemdois {
+  width: 100%;
+  border: blue solid 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.itemum img{
+  margin: 20px;
+  width: 34%;
+}
+
+.itemdois img{
+  margin: 20px;
+  width: 34%;
+}
+
+.itemum p {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: aliceblue;
+}
+
+.itemdois p {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: aliceblue;
 }
