@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koh+Santepheap&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 100vh;
+    background: url(imagen/image\ da\ igreja.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: #4e4d609f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logoprinc{
+    height: 80px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.container{
+  /* border: blue solid 3px; */
+  height: 70vh;
+  position: relative;
+  top: 6rem;
+}
+
+.titlegrand{
+  /* border: red solid 3px; */
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.titlegrand h1 {
+  font-size: 80px;
+  font-family: Koh Santepheap;
+  color: aliceblue;
+}
+
+.titlegrand span{
+  color: red;
+}
+
+.contefamilia{
+  top: 360px;
+  position: relative;
+ height: 360px;
+  /* border: blueviolet solid 4px; */
+}
+
+.texfamilia{
+  position: absolute;
+  /* border: red solid 3px; */
+  top: 15%;
+  left: 10%;
+}
+
+.texfamilia h1 {
+  color: #CB0000;
+ font-size: 45px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paragrafamilia{
+  position: absolute;
+  /* border: black solid 3px; */
+  left: 48%;
+  top: 10%;
+}
+
+.paragrafamilia p {
+ font-size: 33px;
+ font-family: Koh Santepheap;
+}
+
+.main{
+  background: url(https://bibliaseensina.com.br/wp-content/uploads/2023/03/alguem-no-culto-de-maos-para-o-ar-ilustrando-se-devemos-adorar-jesus.jpg) no-repeat;
+  background-size: cover;
+    background-position: center;
+  position: relative;
+ top: 320px;
+ height: 750px;
+}
