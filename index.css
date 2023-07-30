@@ -1,72 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koh+Santepheap&display=swap');
 
-*{
+* {
   box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-body{
-    min-height: 100vh;
-    background: url(imagen/image\ da\ igreja.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
+
+body {
+  min-height: 100vh;
+  background: url(imagen/image\ da\ igreja.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 100px;
-    background-color: #4e4d609f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background-color: #4e4d609f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
-.logoprinc{
-    height: 80px;
+.logoprinc {
+  height: 80px;
 }
 
 .navbar a {
-    position: relative;
-    font-size: 18px;
-    color: aliceblue;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
+  position: relative;
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
 }
 
 .navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: aliceblue;
-    transition: .3s;
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: aliceblue;
+  transition: .3s;
 }
 
 .navbar a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
-.container{
+.container {
   /* border: blue solid 3px; */
   height: 70vh;
   position: relative;
   top: 6rem;
 }
 
-.titlegrand{
+.titlegrand {
   /* border: red solid 3px; */
   position: absolute;
   top: 30%;
@@ -79,18 +81,18 @@ body{
   color: aliceblue;
 }
 
-.titlegrand span{
+.titlegrand span {
   color: red;
 }
 
-.contefamilia{
+.contefamilia {
   top: 360px;
   position: relative;
- height: 360px;
+  height: 360px;
   /* border: blueviolet solid 4px; */
 }
 
-.texfamilia{
+.texfamilia {
   position: absolute;
   /* border: red solid 3px; */
   top: 15%;
@@ -99,11 +101,11 @@ body{
 
 .texfamilia h1 {
   color: #CB0000;
- font-size: 45px;
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 45px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.paragrafamilia{
+.paragrafamilia {
   position: absolute;
   /* border: black solid 3px; */
   left: 48%;
@@ -111,17 +113,17 @@ body{
 }
 
 .paragrafamilia p {
- font-size: 33px;
- font-family: Koh Santepheap;
+  font-size: 33px;
+  font-family: Koh Santepheap;
 }
 
-.main{
+.main {
   background: url(https://images.unsplash.com/photo-1561448817-f17eed390089?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80) no-repeat;
   background-size: cover;
-    background-position: center;
+  background-position: center;
   position: relative;
- top: 320px;
- height: 750px;
+  top: 320px;
+  height: 750px;
 }
 
 
@@ -148,14 +150,64 @@ body{
   margin-bottom: 10px;
 }
 
-.itemum img{
+.itemum img {
   margin: 20px;
-  width: 34%;
+  box-sizing: border-box;
+  width: 37%;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
 }
 
-.itemdois img{
+.itemum img:hover {
+  border: 1px solid rgb(194, 7, 7);
+  transform: scale(1.05);
+}
+
+.itemum img:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.itemdois img {
   margin: 20px;
-  width: 34%;
+  box-sizing: border-box;
+  width: 38%;
+  height: 354px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.itemdois img:hover {
+  border: 1px solid rgb(194, 7, 7);
+  transform: scale(1.05);
+}
+
+.itemdois img:active {
+  transform: scale(0.95) rotateZ(1.7deg);
 }
 
 .itemum p {
@@ -172,14 +224,14 @@ body{
   text-align: center;
 }
 
-.livecard{
+.livecard {
   top: 20rem;
   position: relative;
   height: 21rem;
   border: blue solid 2px;
 }
 
-.facecard{
+.facecard {
   display: flex;
   align-items: center;
   margin: 20px;
@@ -187,42 +239,41 @@ body{
 }
 
 .facecard h1 {
- margin-left: 30px;
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.facecard img{
-width: 100px;
+.facecard img {
+  width: 100px;
 }
 
-.imaglive{
+.imaglive {
   display: flex;
   justify-content: center;
 }
 
-.imaglive img{
- width: 25rem;
+.imaglive img {
+  width: 25rem;
 }
 
-#cardgif{
- position: absolute;
- left: 75%;
- bottom: 1px;
+#cardgif {
+  position: absolute;
+  left: 75%;
+  bottom: 1px;
 }
 
-#cardgif img{
- width: 16rem;
+#cardgif img {
+  width: 16rem;
 }
 
-.contendizimo{
+.contendizimo {
   position: relative;
   top: 20rem;
-  border: #CB0000 solid 2px;
   height: 20rem;
   background-color: #413040;
 }
 
-.cardizimo{
+.cardizimo {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -230,7 +281,7 @@ width: 100px;
   justify-content: center;
 }
 
-.cardizimo h3{
+.cardizimo h3 {
   color: aliceblue;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 25px;
@@ -251,29 +302,119 @@ width: 100px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
- }
- 
- .cardizimo span {
+}
+
+.cardizimo span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
- }
- 
- .cardizimo span:after {
+}
+
+.cardizimo span:after {
   content: '»';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -15px;
   transition: 0.5s;
- }
- 
- .cardizimo button:hover span {
+}
+
+.cardizimo button:hover span {
   padding-right: 15px;
- }
- 
- .cardizimo button:hover span:after {
+}
+
+.cardizimo button:hover span:after {
   opacity: 1;
   right: 0;
- }
+}
+
+.cardpastor{
+  position: relative;
+  top: 20rem;
+  height: 20rem;
+  background-color: #FF6A48;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blokpastor{
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardpastorlink{
+  width: 63%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.cardpastorlink img{
+  width: 60px;
+  margin: 10px;
+}
+
+#imgpastor img{
+  height: 100%;
+}
+
+.containerfoter{
+  position: relative;
+  top: 20rem;
+  height: 20rem;
+  background-color: #3F4359;
+}
+
+.blockfoter{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ladodireito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+}
+
+.ladodireito p {
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+
+.ladodireito img {
+ width: 14rem;
+}
+
+.meio{
+  display: flex;
+  align-items: end;
+}
+
+.meio img{
+  width: 40px;
+  margin: 10px;
+
+}
+
+.ladoesquerdo{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.ladoesquerdo p {
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
