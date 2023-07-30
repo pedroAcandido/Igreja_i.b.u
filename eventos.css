@@ -11,6 +11,13 @@
 
 }
 
+body{
+  min-height: 100vh;
+  background: url(https://wallpaper.dog/large/10887941.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -51,3 +58,24 @@
   .navbar a:hover::before {
     width: 100%;
   }
+
+  .conterntitle{
+    position: relative;
+    border: red solid 2px;
+    height: 100vh;
+  }
+
+.titlegrand{
+  position: absolute;
+  border: blue solid 2px;
+  top: 72%;
+  width: 100%;
+}
+
+.titlegrand h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: aliceblue;
+}
+
+
