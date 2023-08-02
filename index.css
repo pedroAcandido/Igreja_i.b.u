@@ -134,94 +134,43 @@ body {
   height: 100%;
 }
 
-.itemum {
+.containerfoto {
+  display: flex;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 10px;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
 }
 
-.itemdois {
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+  color: aliceblue;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.itemum img {
-  margin: 20px;
-  box-sizing: border-box;
-  width: 37%;
-  height: 254px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
-}
-
-.itemum img:hover {
-  border: 1px solid rgb(194, 7, 7);
-  transform: scale(1.05);
-}
-
-.itemum img:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
-
-.itemdois img {
-  margin: 20px;
-  box-sizing: border-box;
-  width: 38%;
-  height: 354px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
-}
-
-.itemdois img:hover {
-  border: 1px solid rgb(194, 7, 7);
-  transform: scale(1.05);
-}
-
-.itemdois img:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
-
-.itemum p {
-  font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: aliceblue;
-  text-align: center;
-}
-
-.itemdois p {
-  font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: aliceblue;
-  text-align: center;
+  height: 100%;
 }
 
 .livecard {

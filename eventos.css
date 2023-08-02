@@ -11,12 +11,11 @@
 
 }
 
-body{
+/* body{
   min-height: 100vh;
-  background: url(https://wallpaper.dog/large/10887941.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .header {
     position: fixed;
@@ -60,6 +59,10 @@ body{
   }
 
   .conterntitle{
+    background: url(https://wallpaper.dog/large/10887941.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
     position: relative;
     border: red solid 2px;
     height: 100vh;
@@ -67,7 +70,6 @@ body{
 
 .titlegrand{
   position: absolute;
-  border: blue solid 2px;
   top: 72%;
   width: 100%;
 }
@@ -77,5 +79,7 @@ body{
   font-size: 5rem;
   color: aliceblue;
 }
+
+
 
 
