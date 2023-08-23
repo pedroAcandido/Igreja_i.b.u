@@ -78,7 +78,7 @@ body {
 .titlegrand h1 {
   font-size: 80px;
   font-family: Koh Santepheap;
-  color: rgb(173, 173, 173);
+  color: rgb(172, 101, 101);
 }
 
 .titlegrand span {
@@ -117,19 +117,41 @@ body {
   font-family: Koh Santepheap;
 }
 
+.sobreaigreja {
+  background-color: cadetblue;
+  position: relative;
+  top: 20rem;
+  display: flex;
+  justify-content: space-around;
+}
 
+.containcard{
+  display: flex;
+  justify-content: space-around;
+}
+
+.containcard img{
+  width: 24rem;
+  margin: 10px;
+}
+
+.containcard p {
+ color: #ffffff;
+ font-size: 31px;
+ text-align: center;
+}
 
 /* <!------------> */
 
 
-.containerfoter{
+.containerfoter {
   position: relative;
   top: 20rem;
   height: 20rem;
   background-color: #3F4359;
 }
 
-.blockfoter{
+.blockfoter {
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -150,21 +172,21 @@ body {
 }
 
 .ladodireito img {
- width: 14rem;
+  width: 14rem;
 }
 
-.meio{
+.meio {
   display: flex;
   align-items: end;
 }
 
-.meio img{
+.meio img {
   width: 40px;
   margin: 10px;
 
 }
 
-.ladoesquerdo{
+.ladoesquerdo {
   display: flex;
   flex-direction: column;
   width: 40%;
