@@ -78,14 +78,66 @@ body {
 }
 
 
-.containercards{
-position: relative;
-top: 18rem;
-display: flex;
-justify-content: space-around;
+.containercards {
+  position: relative;
+  top: 18rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: brown;
 }
 
+figure {
+  margin: 10px;
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
 
+figure img {
+width: 25rem;
+height: 17rem;
+background-size: cover;
+background-position: center;
+}
+
+figure>* {
+  grid-area: 1/1;
+  transition: .4s;
+}
+
+figure figcaption {
+  display: grid;
+  align-items: end;
+  font-family: 'Phudu', cursive;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: aliceblue;
+  padding: .75rem;
+  background: var(--c, rgba(26, 24, 24, 0.6));
+  clip-path: inset(0 var(--_i, 100%) 0 0);
+  mask-image:
+    linear-gradient(#000 0 0),
+    linear-gradient(#000 0 0);
+  mask-composite: inherit;
+  mask-clip: text, padding-box;
+  margin: -1px;
+}
+
+figure:hover figcaption {
+  --_i: 0%;
+}
+
+figure:hover img {
+  transform: scale(1.2);
+}
+
+@supports not (-webkit-mask-clip: text) {
+  figure figcaption {
+    mask: none;
+    color: #fff;
+  }
+}
 
 
 
