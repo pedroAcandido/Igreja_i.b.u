@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koh+Santepheap&family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koh+Santepheap&family=Montserrat:wght@300&family=Phudu&display=swap');
 
 * {
   box-sizing: border-box;
@@ -35,7 +35,7 @@ body {
 
 .titlegrand h1 {
   font-size: 80px;
-  font-family: 'Phudu', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   color: aliceblue;
 }
 
@@ -60,7 +60,7 @@ body {
 .texfamilia h1 {
   color: #CB0000;
   font-size: 45px;
-  font-family: 'Phudu', cursive;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .paragrafamilia {
@@ -72,7 +72,7 @@ body {
 
 .paragrafamilia p {
   font-size: 33px;
-  font-family: 'Phudu', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   text-align: center;
   margin-right: 10px;
 }
@@ -109,7 +109,7 @@ figure>* {
 figure figcaption {
   display: grid;
   align-items: end;
-  font-family: 'Phudu', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 2.3rem;
   font-weight: bold;
   color: aliceblue;
@@ -139,7 +139,29 @@ figure:hover img {
   }
 }
 
+.cardpastor {
+  position: relative;
+  top: 19rem;
+  display: flex;
+}
 
+.cardpastor img {
+  width: 40rem;
+  margin: 8px;
+}
+
+.cardpastor p {
+  text-align: center;
+  font-size: 18pt;
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 3px;
+}
+
+.textopastor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 /* <!------------> */
 
@@ -167,7 +189,7 @@ figure:hover img {
 
 .ladodireito p {
   color: aliceblue;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   margin-bottom: 5px;
 }
 
@@ -197,6 +219,6 @@ figure:hover img {
 
 .ladoesquerdo p {
   color: aliceblue;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 18px;
 }
