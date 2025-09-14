@@ -439,6 +439,13 @@ https://www.tooplate.com/view/2138-aqua-nova
             overflow: hidden;
         }
 
+        .about-card img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    display: block;
+}
+
         .about-section::before {
             content: '';
             position: absolute;
